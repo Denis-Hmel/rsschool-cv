@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A PhotoGallery by Grid Layout</title>
+
+<style>
+
+body {
+    margin: auto 95px;
+  
+ } 
+ 
+ 
+.header{
+    background-color: rgba(12, 12, 14, 1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0vw;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    width: 1440px;
+    height: 90px;
+    font-family: 'Forum';
+    font-size: 22px;
+}
+ 
+.title{
+display: grid;
+justify-content: space-between;
+align-items: center;
+grid-template-columns: repeat(6, 1fr);
+text-align: center;
+}
+
+
+.logo{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+ img{
+    width: 1440px;
+    height: 600px;
+ }
+
+ .about{
+width: 1440px;
+height: 760px;
+background-color: white;
+text-align: center;
+
+ }
+
+
+.logo2{
+    width: 450px;
+    height: 560px;
+
+}
+
+.foto2{
+display: grid;
+justify-content: space-between;
+align-items: center;
+grid-template-columns: repeat(3, 1fr);
+}
+
+.favorit{
+    width: 1440px;
+    height: 1440px;
+}
+.line{   
+width: 100px;
+height: 0px;
+border: 1px solid #BB945F;
+margin-left: 670px;
+}
+
+.line2{
+    width: 100px;
+    height: 0px;
+    border: 1px solid #BB945F;
+}
+
+ul,li{
+  display: inline;
+  margin-right: 70px;
+  font-size: larger;
+
+
+}
+
+.book{
+    width: 1440px;
+    height: 1150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    column-gap: 70px;
+}
+
+.book_box{
+    width: 550px;
+    height: 555px;
+    text-align: left;
+    border: 2px solid black;
+}
+
+.book_box_item{
+width: 300px;
+height: 500px;
+text-align: left;
+font-family: 'Forum';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 40px;
+}
+
+.item{
+    width: 200px;
+    height:300px;
+   position: relative;;
+   top:-428px;
+   left: 430px;
+}
+
+.item2{
+position: relative;;
+top:-140px;
+left: 10px;
+}
+
+.coffe{
+    width: 1440px;
+    height: 841px;
+    text-align: center;
+
+}
+
+.coffe_title{
+ width: 1440px;
+height: 120px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 40px;
+text-align: center;
+letter-spacing: 2px;
+text-transform: capitalize;
+color: #000000;
+}
+
+.coffe2{
+    width: 1440px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    font-size: larger;
+
+}
+
+.coffe2_box1{
+text-align: left;
+font-family: 'Forum';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 40px;
+}
+
+.coffe2_box1_title{
+width: 317px;
+height: 40px;
+font-family: 'Forum';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+letter-spacing: 2px;
+text-transform: capitalize;
+color: #BB945F;}
+
+.coffe2_box1_title1{
+height: 40px;
+font-family: 'Forum';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+letter-spacing: 2px;
+text-transform: capitalize;
+color: #BB945F;}
+
+
+
+.coffe2_box2{
+text-align: right;
+font-family: 'Forum';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 40px;
+}
+
+.contacts{
+    width: 1440px;
+    height: 630px;
+    text-align: center;
+}
+
+.contacts2{
+    width: 1440px;
+    height: 565px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    font-size: larger;
+    margin-top: 40px;
+  
+}
+
+
+.contacts_box{
+ text-align: left;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 40px;
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+font-family: 'Inter';
+letter-spacing: 2px;
+text-transform: capitalize;
+color: #000000;
+}
+
+
+
+.contacts_box2{
+ width: 696px;
+height: 414px;
+background-image: url('image/Rectangle 4.png');
+}
+
+.library{ 
+    width: 1440px;
+    height: 614px;
+    text-align: center;
+}
+
+.library2{
+    width: 1440px;
+    height: 565px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    font-size: larger;
+}
+
+.footer{
+    width: 1440px;
+    height:120px;
+    background-color: black;
+}
+
+.footer2{
+    width: 1440px;
+    height: 120px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    color: #FFFFFF;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+}
+.footer_box{
+text-align: start;
+line-height: 32px;
+margin-left: 15px;
+}
+.footer_box1{
+text-align: end;
+margin-right: 15px;
+}
+
+
+.footer3{
+    width: 1440px;
+    height: 100px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 60px 1235px 90px;
+    justify-content: space-around;
+    font-size: larger;
+    color: white;  
+    align-items: center;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 20px;
+
+}
+
+form{
+    width: 450px;
+    border: 5px solid brown;
+}
+.form2{
+    background-color: brown;
+    width: 400px;
+    height: 200px;
+    margin: 22px;
+}
+
+.foto_title{
+    width: 25px;
+    height: 25px;
+}
+
+.box3{
+    width: 440px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    justify-content: start;
+    font-size: larger; 
+}
+.box4{
+   
+    height: 400px;
+    display: grid;
+    grid-template-columns: 200px 100px 110px;
+    justify-content: end;
+    font-size: larger; 
+}
+.line4{
+    width: 100px;
+    height: 0px;
+    border: 1px solid #BB945F;
+    padding-top: 0px;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+                        <div class="header">
+                            <div>Brooklyn Public Library</div>
+                            <div class="title">
+                                 <div>About</div>
+                                 <div>Favorites</div>
+                                    <div>Coffee shop</div>
+                                    <div>Contacts</div>
+                                    <div>Library card</div>
+                                    <div><img  class="logo" src="image/logo.png"> </div>
+                            </div>
+                         </div>
+                         <div class="fon">
+                        <img src="image/Welcome.png" alt="welcom">
+                        </div>
+                        <div class="about">
+                            <div><h1>About</h1></div>
+                            <div class="line"></div>
+                            <div><h2>The Brooklyn Library is a free, a large number of books and a cozy coffe shop inside</h2></div>
+                            <div class="foto2">
+                                <div><img  class="logo2" src="image/image 1.png"> </div>
+                                <div><img  class="logo2" src="image/image 2.png"> </div>
+                                <div><img  class="logo2" src="image/image 3.png"> </div>
+                            </div>
+                            <div></div>
+                            </div>
+
+                            <div class="Favorit">
+                                <div><h2> <span style="margin-left: 670px;"></span>Favorites</h2></div>
+                                <div class="line"></div>
+                                <div><h3>Pick favorites of season</h3></div>
+                                <div>
+                                    <ul type="circle">
+                                        <li>Winter</li>
+                                        <li>Spring</li>
+                                        <li>Summer</li>
+                                        <li>Autumn</li>
+                                    </ul>
+                                </div>
+                                <div class="book">
+                                <div class="book_box">
+                                    <p>Staff picks</p>
+                                    <div class="line2"></div>
+                                    <p>THE BOOK EATERS</p>
+                                    <p>By Sunyi Dean</p>
+                                    <p class="book_box_item">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart</p>
+                                    <button class="item2">Buy</button>
+                                    <div><img class="item" src="image/book.png"></div>
+                                </div>
+                                <div class="book_box">
+                                    <p>Staff picks</p>
+                                    <div class="line2"></div>
+                                    <p>CACKLE</p>
+                                    <p>By Rachel Harrisson</p>
+                                    <p class="book_box_item">Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</p>
+                                    <button class="item2">Buy</button>
+                                    <div><img class="item" src="image/book (1).png"></div>
+                                </div>
+                                <div class="book_box">
+                                    <p>Staff picks</p>
+                                    <div class="line2"></div>
+                                    <p>DANTE: POET OF THE SECULAR WORLD</p>
+                                    <p>By Erich Auerbach</p>
+                                    <p class="book_box_item">Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</p>
+                                    <button class="item2">Buy</button>
+                                    <div><img class="item" src="image/book (2).png"></div>
+                                </div>
+                                <div class="book_box">
+                                    <p>Staff picks</p>
+                                    <div class="line2"></div>
+                                    <p>THE LAST QUEEN</p>
+                                    <p>By Clive Irving</p>
+                                    <p class="book_box_item">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
+                                    <button class="item2">Sold</button>
+                                    <div><img class="item" src="image/book (3).png"></div>
+                                </div>
+                                </div>
+<div class="coffe">
+    <div><h2>Coffe Shop</h2></div>
+    <div class="line"></div>
+    <div><h3 class="coffe_title">In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. 
+        you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try desserts from bakery.</h3></div>
+        <div class="coffe2">
+            <div class="coffe2_box1">
+<p class="coffe2_box1_title">Cooffe and Tea</p>
+<div class="box3">
+<div>Cold Brew Coffee </div>
+<div class="line4"></div>
+<div>$3</div>
+<div>French Press Pot</div> 
+<div class="line4"></div>
+<div> $5</div>
+<div>Espresso </div> 
+<div class="line4"></div>
+<div>$2</div>
+<div>Cappuccino </div>
+<div class="line4"></div>
+<div>$4</div>
+<div>Hot Tea</div> 
+<div class="line4"></div>  
+ <div>$2</div>  
+<div>Cold Tea</div> 
+<div class="line4"></div>
+<div>$2</div>
+
+</div>
+            </div>
+            <div class="coffe2_box2">
+            <p class="coffe2_box1_title1">Desserts and Cakes</p>
+            <div class="box4">
+                <div>Forest gateau</div>
+                <div class="line4"></div>
+                <div>$16</div>
+                <div>Blue Moon </div> 
+                <div class="line4"></div>
+                <div> $16</div>
+                <div>Trufflle cake</div> 
+                <div class="line4"></div>
+                <div>$15</div>
+                <div>Chocolate cake</div>
+                <div class="line4"></div>
+                <div>$18</div>
+                <div>Poets Dream cake</div> 
+                <div class="line4"></div>  
+                 <div>$16</div>  
+                <div>Pineapple Cak</div> 
+                <div class="line4"></div>
+                <div>$14</div>
+                </div>
+                        </div>
+            </div>
+        </div>
+<div class="library">
+        <div><h2>Digital Library Cards</h2></div>
+        <div class="line"></div>
+    <div class="library2">
+        <div class="library_box">
+            <div>Find your Library card</div>
+            <form>
+                <div class="form2">Brooklyn Public Library
+                    <input placeholder="readers name">
+                    <input placeholder="Card number">
+                </div>
+                <button>Check the card</button>
+
+
+
+            </form>
+        </div>
+        <div class="library_box">
+            <div>Get a reader card</div>
+            <div>You will be able to see reader card after logging into account or you can register a new account</div>
+            <button>Sign Up</button>
+            <button>Sign</button>
+
+        </div>
+    </div>
+    
+
+
+
+        <div class="contacts">
+            <div><h2>Our Contacts</h2></div>
+            <div class="line"></div>
+            <div class="contacts2">
+            <div class="contacts_box">
+                <div><h3>For All Labrary Inquries:</h3></div>
+                <div>Please Call (617) 730-2370</div>
+                <div>For TTY, please Call (617) 730-2370</div>
+                <div>Putterham Library: (617) 730-2385</div>
+                <div><h3>Senior Staff</h3></div>
+                <div>Library Director:Amanda Hirst</div>
+                </div>
+                <div class="contacts_box2"></div>  
+            </div>
+        </div>
+<div class="footer">
+    <div class="footer2">
+                <div class="footer_box">
+                    <div>286 Cadman Plaza, New York</div>
+                    <div>NY 11238, United States</div>
+                    <div><a href><img class="foto_title" src="image/u_facebook-f.png"           alt="facebook"></a>
+                     <a href><img src="image/u_instagram.png" alt="inst"            class="foto_title"></a>
+                          <a href><img src="image/u_twitter-alt.png"  alt="twitter"                class="foto_title"></a>
+                     <hr>
+                    </div>
+                </div>
+
+            <div class="footer_box1">
+                <div>Mon-Fri</div>
+                <div>08:00 am - 07:00 pm</div>
+                <div>Sat - Sun</div>
+                <div>10:00 am - 06:00 pm</div>
+                <hr>
+            </div>
+        </div>
+<div class="footer3">
+    <div>2023</div>
+    <div>The Rolling Scapes School</div>
+    <div>Username</div>
+</div>
+ 
+
+</div>
+
+    </div>
+</body>
+</html>
+
+
