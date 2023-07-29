@@ -86,11 +86,30 @@ margin-left: 670px;
     border: 1px solid #BB945F;
 }
 
+li {
+      color:brown;
+    }
+
+    li :hover{
+      color: orange;
+    }
+
 ul,li{
   display: inline;
   margin-right: 70px;
   font-size: larger;
 
+}
+
+
+.favorit2{
+    margin-bottom: 30px;
+}
+
+.logo4{
+position: relative;
+  margin: 0;
+  padding: 0;
 
 }
 
@@ -256,13 +275,173 @@ background-image: url('image/Rectangle 4.png');
     text-align: center;
 }
 
+
+
+.library_title{
+font-family: 'Forum';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+text-align: center;
+letter-spacing: 2px;
+text-transform: capitalize;
+color: #0C0C0E;
+}
+
+.libary_title_item4{
+
+position: relative;
+width: 310px;
+height: 30px;
+left: 15px;
+top:17px;
+
+font-family: 'Forum';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+letter-spacing: 0.02em;
+color: #000000;
+
+}
+
+::placeholder{
+font-family: 'Forum';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 50px;
+letter-spacing: 0.02em;
+color: #8E8E8E
+
+}
+
+
+input{
+    position: relative;
+width: 370px;
+height: 45px;
+left: -2px;
+top: 30px;
+border-radius: 15px;
+margin-bottom: 15px;
+
+}
+
+form{
+    width: 450px;
+    border: 3px solid #BB945F;
+}
+.form2{
+    background-color: #BB945F;
+    width: 400px;
+    height: 200px;
+    margin: 22px;
+
+}
+
+
+.libary_title_item{
+margin-top: 15px;
+margin-bottom: 30px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+letter-spacing: 0.02em;
+color: #000000;}
+
+
+.libary_title_item1{
+position: relative;
+width: 220px;
+height: 33px;
+left:485px;
+top: 25px;
+margin-bottom: 30px;
+font-family: 'Forum';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 33px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.02em;
+color: #000000;
+}
+
+.libary_title_item2{
+position: relative;
+width: 456px;
+height: 120px;
+left: 250px;
+top: 25px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 40px;
+text-align: right;
+letter-spacing: 0.02em;
+color: #000000;
+}
+
+
 .library2{
     width: 1440px;
-    height: 565px;
+    height: 485px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-around;
     font-size: larger;
+}
+
+
+
+.form2_library{
+    position: relative;
+top:-10px;
+    width: 162px;
+height: 40px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 1px;
+color: #0C0C0E;
+}
+
+.form2_library1{
+ position: relative;
+left:260px;
+height: 23px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 12px;
+letter-spacing: 1px;
+color: #0C0C0E;
+}
+
+
+.form2_library2{
+ position: relative;
+left:295px;
+height: 23px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 12px;
+letter-spacing: 1px;
+color: #0C0C0E;
 }
 
 .footer{
@@ -313,16 +492,6 @@ line-height: 20px;
 
 }
 
-form{
-    width: 450px;
-    border: 5px solid brown;
-}
-.form2{
-    background-color: brown;
-    width: 400px;
-    height: 200px;
-    margin: 22px;
-}
 
 .foto_title{
     width: 25px;
@@ -379,19 +548,24 @@ form{
                                 <div><img  class="logo2" src="image/image 2.png"> </div>
                                 <div><img  class="logo2" src="image/image 3.png"> </div>
                             </div>
-                            <div></div>
+                                <div> <ul class="logo4" type="none">
+                                    <li style="display: inline-block;  margin-right: 15px;"><a href="www.google.com">&#9675;</a></li>
+                                     <li style="display: inline-block;  margin-right: 15px;"><a href="www.google.com">	&#9675;<a></li>
+                                     <li style="display: inline-block;  margin-right: 15px;"><a href="www.google.com">&#9675;</a></li>
+                                   </ul>
+                            </div>
                             </div>
 
                             <div class="Favorit">
                                 <div><h2> <span style="margin-left: 670px;"></span>Favorites</h2></div>
                                 <div class="line"></div>
                                 <div><h3>Pick favorites of season</h3></div>
-                                <div>
-                                    <ul type="circle">
-                                        <li>Winter</li>
-                                        <li>Spring</li>
-                                        <li>Summer</li>
-                                        <li>Autumn</li>
+                                <div class="favorit2">
+                                    <ul>
+                                        <li type="circle">&#8853; Winter</li>
+                                        <li>&#920; Spring</li>
+                                        <li>&#920; Summer</li>
+                                        <li>&#920; Autumn</li>
                                     </ul>
                                 </div>
                                 <div class="book">
@@ -487,35 +661,7 @@ form{
                         </div>
             </div>
         </div>
-<div class="library">
-        <div><h2>Digital Library Cards</h2></div>
-        <div class="line"></div>
-    <div class="library2">
-        <div class="library_box">
-            <div>Find your Library card</div>
-            <form>
-                <div class="form2">Brooklyn Public Library
-                    <input placeholder="readers name">
-                    <input placeholder="Card number">
-                </div>
-                <button>Check the card</button>
-
-
-
-            </form>
-        </div>
-        <div class="library_box">
-            <div>Get a reader card</div>
-            <div>You will be able to see reader card after logging into account or you can register a new account</div>
-            <button>Sign Up</button>
-            <button>Sign</button>
-
-        </div>
-    </div>
     
-
-
-
         <div class="contacts">
             <div><h2>Our Contacts</h2></div>
             <div class="line"></div>
@@ -531,6 +677,35 @@ form{
                 <div class="contacts_box2"></div>  
             </div>
         </div>
+
+
+        <div class="library">
+            <div><h2 class="library_title">Digital Library Cards</h2></div>
+            <div class="line"></div>
+        <div class="library2">
+            <div class="library_box">
+                <div class="libary_title_item">Find your Library card</div>
+                <form>
+                    <div class="form2">
+                        <div class="libary_title_item4">Brooklyn Public Library</div>
+                        <input placeholder="Readers name">
+                        <input placeholder="Card number">
+                    </div>
+                    <button class="form2_library">Check the card</button>
+    
+                </form>
+            </div>
+            <div class="library_box1">
+                <div class="libary_title_item1" >Get a reader card</div>
+                <div class="libary_title_item2">You will be able to see reader card after logging into account or you can register a new account</div>
+                <button class="form2_library1">Sign Up</button>
+                <button class="form2_library2">log in</button>
+    
+            </div>
+        </div>
+
+
+
 <div class="footer">
     <div class="footer2">
                 <div class="footer_box">
